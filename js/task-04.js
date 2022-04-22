@@ -6,15 +6,15 @@ const value = document.querySelector('#value');
 
 let counterValue = 0;
 
-decrementButton.addEventListener('click', isDecrementButton);
-incrementButton.addEventListener('click', isIncrementButton);
+decrementButton.addEventListener('click', onDecrementButton);
+incrementButton.addEventListener('click', onIncrementButton);
 
-function isDecrementButton() {
+function onDecrementButton() {
     counterValue -= 1;
     value.textContent = counterValue;
 };
 
-function isIncrementButton() {
+function onIncrementButton() {
     counterValue += 1;
     value.textContent = counterValue;
 };
@@ -30,15 +30,15 @@ function isIncrementButton() {
 
 // let counterValue = 0;
 
-// refs.decrementButton.addEventListener('click', isDecrementButton);
-// refs.incrementButton.addEventListener('click', isIncrementButton);
+// refs.decrementButton.addEventListener('click', onDecrementButton);
+// refs.incrementButton.addEventListener('click', onIncrementButton);
 
-// function isDecrementButton() {
+// function onDecrementButton() {
 //     counterValue -= 1;
 //     refs.value.textContent = counterValue;
 // };
 
-// function isIncrementButton() {
+// function onIncrementButton() {
 //     counterValue += 1;
 //     refs.value.textContent = counterValue;
 // };
