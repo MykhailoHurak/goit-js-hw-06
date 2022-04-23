@@ -1,11 +1,25 @@
 // Рішення ===========================================
 
-const items = document.querySelectorAll('.item');
-console.log('Number of categories:', items.length); // Number of categories: 3
+const itemsRef = document.querySelectorAll('.item');
 
-items.forEach(item => {
+console.log('Number of categories: ', itemsRef.length);
+
+// використовуємо класичний for
+// for (let i = 0; i < itemsRef.length; i += 1) {
+//     console.log(`Category: ${itemsRef[i].querySelector('h2').textContent}
+//     Elements: ${itemsRef[i].querySelectorAll('li').length}`);
+// };
+
+// використовуємо forEach
+// itemsRef.forEach(function (item) {
+//     console.log(`Category: ${item.querySelector('h2').textContent}
+//     Elements: ${item.querySelectorAll('li').length}`);
+// });
+
+// використовуємо forEach стрілочну
+itemsRef.forEach((item) => {
     console.log(`Category: ${item.querySelector('h2').textContent}
-Elements: ${item.querySelectorAll('li').length}`);
+    Elements: ${item.querySelectorAll('li').length}`);
 });
 
 
